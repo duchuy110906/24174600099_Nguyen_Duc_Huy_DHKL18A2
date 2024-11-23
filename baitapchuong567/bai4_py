@@ -1,0 +1,18 @@
+#bai4
+#nhap thoi gian
+thoi_gian = float(input("nhap thoi gian: "))
+#dieu kien thoi gian
+if thoi_gian > 0:
+   hieu_dien_the = 220
+   cuong_do_dong_dien = 2.7
+   cong_suat = 7000
+   #phep tinh
+   cong_suat = thoi_gian * hieu_dien_the * cuong_do_dong_dien / 3600 * 1000
+   #tinh toan
+   phai_tra = cong_suat * 7000
+   #ket qua
+   print("so tien phai tra la: ", phai_tra)
+else:
+   print("thoi gian su dung phai lon hon 0.")
+   
+
