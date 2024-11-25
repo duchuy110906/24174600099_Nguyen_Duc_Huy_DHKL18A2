@@ -1,16 +1,15 @@
-#bai 2
-#nhap x
-x = float(input("nhap gia tri cua x: "))
-#kiem tra dieu kien cua x
-if x > 0:
-    #phep tinh
-    tu_so = -x + (x**2 + 4)**(1/2)
-    mau_so = (x**4 + 1)**(1/7)
-    f_x = tu_so / mau_so
-    #tinh
-    ket_qua = round(f_x, 3)
-    #in ket qua
-    print("gia tri cua bieu thuc la:", ket_qua)
-else:
-    print("gia tri x phai lon hon 0 de thuc hien phep tinh.")
-        
+def loai_bo_khoang_trang_thua():
+    # Nhập chuỗi từ người dùng
+    chuoi_nhap = input("Nhập vào chuỗi ký tự: ").strip()
+    # Khởi tạo chuỗi kết quả
+    ket_qua = ""
+    n = len(chuoi_nhap)
+    # Duyệt qua từng ký tự bằng chỉ số
+    for i in range(n):
+        # Thêm ký tự nếu không phải là khoảng trắng hoặc nếu là khoảng trắng nhưng không đứng liền trước khoảng trắng khác
+        if chuoi_nhap[i] != ' ' or (i > 0 and chuoi_nhap[i - 1] != ' '):
+            ket_qua += chuoi_nhap[i]
+    # In chuỗi kết quả
+    print(f"Chuỗi sau khi loại bỏ dấu cách thừa: {ket_qua}")
+# Gọi hàm
+loai_bo_khoang_trang_thua()

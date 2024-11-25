@@ -1,16 +1,16 @@
-import math
-#nhap gia tri x
-x = float(input("nhap gia tri x: "))
-#kiem tra dieun kien cua x
-if x > 0:
-    #phep tinh
-    log_4_x = math.log(x, 4)
-    log_x_2 = math.log(2, x)
-    #tinh
-    dap_an = log_4_x + log_x_2 
-    dap_an = round(dap_an, 2)
-    #ket qua
-    print("gia tri cua bieu thuc la", dap_an)
-else:
-    print("gia tri x phai lon hon 0 de thuc hien phep tinh")
-        
+def kiem_tra_xau():
+    # Nhập vào hai chuỗi str_1 và str_2
+    str_1 = input("Nhập vào chuỗi str_1: ")
+    str_2 = input("Nhập vào chuỗi str_2: ")
+    # Kiểm tra xem str_2 có nằm trong str_1
+    if str_2 in str_1:
+        print(f"Chuỗi '{str_2}' có nằm trong '{str_1}' .")
+    else:
+        print(f"Chuỗi '{str_2}' không nằm trong '{str_1}' .")
+    # Kiểm tra xem str_1 có nằm trong str_2
+    if str_1 in str_2:
+        print(f"Chuỗi '{str_1}' có nằm trong '{str_2}' .")
+    else:
+        print(f"Chuỗi '{str_1}' không nằm trong '{str_2}' .")
+# Gọi hàm
+kiem_tra_xau()
